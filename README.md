@@ -12,6 +12,24 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 [gustav_profile]: https://people.kth.se/~ghe/
 [this_page]: https://shivammehta25.github.io/Diff-TTSG/
 
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Diff-TTSG: Denoising probabilistic integrated speech and gesture synthesis" />
+  <meta name="og:description" content="We present Diff-TTSG, the first diffusion model that jointly learns to synthesise speech and gestures together. Our method is probabilistic and non-autoregressive, and can be trained on small datasets from scratch.">
+  <meta property="og:image" content="images/architecture.png" />
+  <meta property="twitter:image" content="images/architecture.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://doubleblindssw23.github.io/Diff-TTSG/" />
+  <meta property="og:site_name" content="Diff-TTSG" />
+  <meta name="twitter:card" content="images/architecture.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="tts, text to speech, text to gesture, text to speech and gesture, diffusion models, generative modelling, machine learning, deep learning, speech synthesis, research, phd">
+  <meta name="description" content="We present Diff-TTSG, the first diffusion model that jointly learns to synthesise speech and gestures together. Our method is probabilistic and non-autoregressive, and can be trained on small datasets from scratch." />
+</head>
+
 ## Code coming soon!
 
 <style type="text/css">
