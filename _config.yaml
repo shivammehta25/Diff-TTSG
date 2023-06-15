@@ -1,5 +1,4 @@
 title: Diff-TTSG
+theme: jekyll-theme-dinky
 description: Denoising probabilistic integrated speech and gesture synthesis
 show_downloads: False
-plugins:
-- jekyll-remote-theme
