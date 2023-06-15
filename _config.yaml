@@ -1,0 +1,5 @@
+title: Diff-TTSG
+description: Denoising probabilistic integrated speech and gesture synthesis
+show_downloads: False
+plugins:
+- jekyll-remote-theme
