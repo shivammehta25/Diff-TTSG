@@ -108,8 +108,9 @@ audio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 14px;
+  padding: 10px 54px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-weight: bold;
   border-radius: 6px;
   border: none;
 
@@ -769,3 +770,5 @@ Currently loaded: <span id="mu-diffusion-text" style="font-weight: bold;" > Exam
   </tr>
 </tbody>
 </table>
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fshivammehta25.github.io%2FDiff-TTSG&count_bg=%23409CFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
