@@ -10,6 +10,7 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 [jonas_profile]: https://www.kth.se/profile/beskow
 [eva_profile]: https://www.kth.se/profile/szekely
 [gustav_profile]: https://people.kth.se/~ghe/
+[this_page]: https://shivammehta25.github.io/Diff-TTSG/
 
 ## Code coming soon!
 
@@ -771,4 +772,4 @@ Currently loaded: <span id="mu-diffusion-text" style="font-weight: bold;" > Exam
 </tbody>
 </table>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fshivammehta25.github.io%2FDiff-TTSG&count_bg=%23409CFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fshivammehta25.github.io%2FDiff-TTSG&count_bg=%23409CFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)][this_page]
