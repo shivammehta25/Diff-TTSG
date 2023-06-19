@@ -1,17 +1,5 @@
 # Diff-TTSG: Denoising probabilistic integrated speech and gesture synthesis
 
-##### [Shivam Mehta][shivam_profile], [Siyang Wang][siyang_profile], [Simon Alexanderson][simon_profile], [Jonas Beskow][jonas_profile], [Éva Székely][eva_profile], and [Gustav Eje Henter][gustav_profile]
-
-We present Diff-TTSG, the first diffusion model that jointly learns to synthesise speech and gestures together. Our method is probabilistic and non-autoregressive, and can be trained on small datasets from scratch. In addition, to showcase the efficacy of these systems and pave the way for their evaluation, we describe a set of careful uni- and multi-modal subjective tests for evaluating integrated speech and gesture synthesis systems.
-
-[shivam_profile]: https://www.kth.se/profile/smehta
-[siyang_profile]: https://www.kth.se/profile/siyangw
-[simon_profile]: https://www.kth.se/profile/simonal
-[jonas_profile]: https://www.kth.se/profile/beskow
-[eva_profile]: https://www.kth.se/profile/szekely
-[gustav_profile]: https://people.kth.se/~ghe/
-[this_page]: https://shivammehta25.github.io/Diff-TTSG/
-
 <head>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
@@ -29,6 +17,21 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
   <meta name="keywords" content="tts, text to speech, text to gesture, text to speech and gesture, diffusion models, generative modelling, machine learning, deep learning, speech synthesis, research, phd">
   <meta name="description" content="We present Diff-TTSG, the first diffusion model that jointly learns to synthesise speech and gestures together. Our method is probabilistic and non-autoregressive, and can be trained on small datasets from scratch." />
 </head>
+
+##### [Shivam Mehta][shivam_profile], [Siyang Wang][siyang_profile], [Simon Alexanderson][simon_profile], [Jonas Beskow][jonas_profile], [Éva Székely][eva_profile], and [Gustav Eje Henter][gustav_profile]
+
+We present Diff-TTSG, the first diffusion model that jointly learns to synthesise speech and gestures together. Our method is probabilistic and non-autoregressive, and can be trained on small datasets from scratch. In addition, to showcase the efficacy of these systems and pave the way for their evaluation, we describe a set of careful uni- and multi-modal subjective tests for evaluating integrated speech and gesture synthesis systems.
+
+[Please read our arXiv preprint here][arxiv_link].
+
+[shivam_profile]: https://www.kth.se/profile/smehta
+[siyang_profile]: https://www.kth.se/profile/siyangw
+[simon_profile]: https://www.kth.se/profile/simonal
+[jonas_profile]: https://www.kth.se/profile/beskow
+[eva_profile]: https://www.kth.se/profile/szekely
+[gustav_profile]: https://people.kth.se/~ghe/
+[this_page]: https://shivammehta25.github.io/Diff-TTSG/
+[arxiv_link]: https://arxiv.org/abs/2306.09417
 
 ## Code coming soon!
 
