@@ -1,0 +1,43 @@
+_target_: diff_ttsg.models.diff_ttsg.Diff_TTSG
+n_vocab: 149
+n_spks: 1
+spk_emb_dim: 64
+n_enc_channels: 192
+filter_channels: 768
+filter_channels_dp: 256
+n_heads: 2
+n_enc_layers: 6
+enc_kernel: 3
+enc_dropout: 0.1
+window_size: 9
+n_feats: 80
+n_motions: 45
+dec_dim: 64
+beta_min: 0.05
+beta_max: 20.0
+pe_scale: 1000
+motion_reduction_factor: 1
+only_speech: False
+encoder_type: default
+out_size: 172
+motion_decoder_channels: [256, 256]
+data_statistics: ${data.data_statistics}
+
+mu_motion_encoder_params:
+  hidden_channels: 384
+  d_head: 64
+  n_layer: 4
+  n_head: 1
+  ff_mult: 4
+  conv_expansion_factor: 2
+  dropout: 0.1
+  dropconv: 0.1
+  dropatt: 0.1
+  conv_kernel_size: 21
+  prior_loss: True
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 1e-4 
+  weight_decay: 0.0
