@@ -1,0 +1,23 @@
+_target_: diff_ttsg.data.cormac_datamodule.CormacDataModule
+train_filelist_path: data/filelists/cormac_train.txt
+valid_filelist_path: data/filelists/cormac_val.txt 
+batch_size: 32
+num_workers: 20
+pin_memory: True
+cmudict_path: diff_ttsg/resources/cmu_dictionary
+motion_folder: data/cormac/processed_sm0_0_86fps
+add_blank: True
+n_fft: 1024
+n_feats: 80
+sample_rate: 22050
+hop_length: 256
+win_length: 1024
+f_min: 0
+f_max: 8000
+data_statistics:  # Computed for this dataset
+  mel_mean: -5.536622
+  mel_std: 2.116101
+  motion_mean: 0.072936
+  motion_std: 0.501975
+motion_pipeline_filename: data_pipe.expmap_86.1328125fps.sav 
+seed: ${seed}
