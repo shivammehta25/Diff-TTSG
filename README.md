@@ -37,6 +37,10 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 
 Accepted at [Interspeech SSW (2023)](https://ssw2023.org/)
 
+## Teaser
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xYxcqyMJjsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <style type="text/css">
     .tg {
     border-collapse: collapse;
