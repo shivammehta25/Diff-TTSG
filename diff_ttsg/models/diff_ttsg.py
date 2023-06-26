@@ -192,7 +192,7 @@ class Diff_TTSG(LightningModule):
             'decoder_outputs_motion': decoder_outputs_motion,
             'attn': attn[:, :, :y_max_length],
             'mel': denormalize(decoder_outputs, self.mel_mean, self.mel_std),
-            'motion': denormalize(decoder_outputs_motion, self.motion_mean, self.motion_std),
+            'motion': denormalize(decoder_outputs_motion, self.motion_mean, self.motion_std) if self.generate_motion else None,
         }
 
     def forward(self, x, x_lengths, y, y_lengths, y_motion, spk=None, out_size=None):

@@ -37,4 +37,6 @@ diffusers @ git+https://github.com/shivammehta25/diffusers.git@myunet1dfixes
 joblib
 notebook
 ipywidgets
+transforms3d
+ffmpeg-python
 # sh            # for running bash commands in some tests (linux/macos only)
