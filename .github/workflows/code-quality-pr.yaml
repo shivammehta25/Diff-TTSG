@@ -6,9 +6,9 @@
 
 name: Code Quality PR
 
-on:
-  pull_request:
-    branches: [main, "release/*", "dev"]
+# on:
+#   pull_request:
+#     branches: [main, "release/*", "dev"]
 
 jobs:
   code-quality:
