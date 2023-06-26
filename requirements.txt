@@ -39,4 +39,5 @@ notebook
 ipywidgets
 transforms3d
 ffmpeg-python
+gradio
 # sh            # for running bash commands in some tests (linux/macos only)
