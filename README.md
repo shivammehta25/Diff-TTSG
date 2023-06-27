@@ -36,7 +36,7 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 2. Create a new environment (optional)
 
    ```bash
-   conda create -n diff-ttsg python=3.9
+   conda create -n diff-ttsg python=3.10 -y
    conda activate diff-ttsg
    ```
 
@@ -61,6 +61,8 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
    ```
 
 or use `synthesis.ipynb`
+
+[Pretrained checkpoint](https://github.com/shivammehta25/Diff-TTSG/releases/download/checkpoint/diff_ttsg_checkpoint.ckpt) (Should be autodownloaded by running either `make install` or `gradio app.py`)
 
 ## Citation information
 
