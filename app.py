@@ -4,12 +4,14 @@ import warnings
 from pathlib import Path
 
 import ffmpeg
+import gdown
 import gradio as gr
 import IPython.display as ipd
 import joblib as jl
 import numpy as np
 import soundfile as sf
 import torch
+import wget
 from tqdm.auto import tqdm
 
 from diff_ttsg.hifigan.config import v1
@@ -30,7 +32,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 ## Modify the checkpoint locations incase of someother locations
 DIFF_TTSG_CHECKPOINT = "diff_ttsg_checkpoint.ckpt"
+DIFF_TTSG_URL = "https://github.com/shivammehta25/Diff-TTSG/releases/download/checkpoint/diff_ttsg_checkpoint.ckpt"
 HIFIGAN_CHECKPOINT = "g_02500000"
+HIFIGAN_URL = "https://drive.google.com/file/d/1qpgI41wNXFcH-iKq1Y42JlBC9j0je8PW/view?usp=drive_link"
 MOTION_PIPELINE = "diff_ttsg/resources/data_pipe.expmap_86.1328125fps.sav"
 CMU_DICT_PATH = "diff_ttsg/resources/cmu_dictionary"
 
@@ -72,8 +76,20 @@ mocap_params = MocapParameterizer("position")
 
 
 ## Load models
+def assert_model_downloaded(checkpoint_path, url, use_wget=False):
+    if Path(checkpoint_path).exists():
+        return
+    print(f"[-] Model not found at {checkpoint_path}! Will download it")
+    if not use_wget:
+        gdown.download(url=url, output=checkpoint_path, quiet=False, fuzzy=True)
+    else:
+        wget.download(url=url, out=checkpoint_path)
+    
 
+
+assert_model_downloaded(DIFF_TTSG_CHECKPOINT, DIFF_TTSG_URL, use_wget=True)
 model = load_model(DIFF_TTSG_CHECKPOINT)
+assert_model_downloaded(HIFIGAN_CHECKPOINT, HIFIGAN_URL)
 vocoder = load_vocoder(HIFIGAN_CHECKPOINT)
 denoiser = Denoiser(vocoder, mode='zeros')
 

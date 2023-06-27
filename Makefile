@@ -26,8 +26,10 @@ test: ## Run not slow tests
 test-full: ## Run all tests
 	pytest
 
-install: ## Install the module
-	pip install -e .[all]
+install: ## Install the module and download the checkpoints
+	pip install -e .
+	if [ ! -f 'diff_ttsg_checkpoint.ckpt' ]; then wget https://github.com/shivammehta25/Diff-TTSG/releases/download/checkpoint/diff_ttsg_checkpoint.ckpt; fi
+	if [ ! -f g_02500000 ]; then gdown 1qpgI41wNXFcH-iKq1Y42JlBC9j0je8PW; fi
 
 train: ## Train the model
 	python diff_ttsg/train.py run_name=dev

@@ -40,4 +40,6 @@ ipywidgets
 transforms3d
 ffmpeg-python
 gradio
+gdown
+wget
 # sh            # for running bash commands in some tests (linux/macos only)
