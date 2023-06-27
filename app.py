@@ -27,7 +27,7 @@ from pymo.writers import BVHWriter
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-DIFF_TTSG_CHECKPOINT = "logs/train/dev/runs/2023-06-26_08-26-26/checkpoints/epoch_epoch=021.ckpt"
+DIFF_TTSG_CHECKPOINT = "diff_ttsg_checkpoint.ckpt"
 HIFIGAN_CHECKPOINT = "g_02500000"
 MOTION_PIPELINE = "diff_ttsg/resources/data_pipe.expmap_86.1328125fps.sav"
 CMU_DICT_PATH = "diff_ttsg/resources/cmu_dictionary"
