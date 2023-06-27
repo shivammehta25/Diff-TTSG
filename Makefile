@@ -26,5 +26,8 @@ test: ## Run not slow tests
 test-full: ## Run all tests
 	pytest
 
+install: ## Install the module
+	pip install -e .[all]
+
 train: ## Train the model
 	python diff_ttsg/train.py run_name=dev
