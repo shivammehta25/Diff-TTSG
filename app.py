@@ -53,7 +53,7 @@ def load_vocoder(checkpoint_path):
 cmu = cmudict.CMUDict(CMU_DICT_PATH)
 def process_text(text: str):
     x = torch.LongTensor(intersperse(text_to_sequence(text, dictionary=cmu), len(symbols))).to(device)[None]
-    x_lengths = torch.LongTensor([x.shape[-1]]).cuda()
+    x_lengths = torch.LongTensor([x.shape[-1]]).to(device)
     x_phones = sequence_to_text(x.squeeze(0).tolist())
     return {
         'x_orig': text,
