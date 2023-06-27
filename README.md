@@ -32,10 +32,16 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 [gustav_profile]: https://people.kth.se/~ghe/
 [this_page]: https://shivammehta25.github.io/Diff-TTSG/
 [arxiv_link]: https://arxiv.org/abs/2306.09417
-
-## Code coming soon!
+[github_code_link]: https://github.com/shivammehta25/Diff-TTSG
+[huggingface_space_link]: https://huggingface.co/spaces/shivammehta25/Diff-TTSG
 
 Accepted at [Interspeech SSW (2023)](https://ssw2023.org/)
+
+## Code
+
+Code available on GitHub: [https://github.com/shivammehta25/Diff-TTSG][github_code_link]
+
+Also available on HuggingFace spaces: [https://huggingface.co/spaces/shivammehta25/Diff-TTSG][huggingface_space_link]
 
 ## Teaser
 
