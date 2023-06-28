@@ -22,7 +22,7 @@
 
 We present Diff-TTSG, the first diffusion model that jointly learns to synthesise speech and gestures together. Our method is probabilistic and non-autoregressive, and can be trained on small datasets from scratch. In addition, to showcase the efficacy of these systems and pave the way for their evaluation, we describe a set of careful uni- and multi-modal subjective tests for evaluating integrated speech and gesture synthesis systems.
 
-[Please read our arXiv preprint here][arxiv_link].
+For more information, please [read our paper][arxiv_link] at the [ISCA Speech Synthesis Workshop (SSW) 2023](https://ssw2023.org/).
 
 [shivam_profile]: https://www.kth.se/profile/smehta
 [siyang_profile]: https://www.kth.se/profile/siyangw
@@ -34,8 +34,6 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 [arxiv_link]: https://arxiv.org/abs/2306.09417
 [github_code_link]: https://github.com/shivammehta25/Diff-TTSG
 [huggingface_space_link]: https://huggingface.co/spaces/shivammehta25/Diff-TTSG
-
-Accepted at [Interspeech SSW (2023)](https://ssw2023.org/)
 
 ## Code
 
