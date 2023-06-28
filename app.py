@@ -193,82 +193,79 @@ def visualize_it(output):
     combine_audio_video('temp', OUTPUT_FOLDER)
     return str(Path(OUTPUT_FOLDER) / 'temp_audio.mp4')
 
-def main():
-    with gr.Blocks() as demo:
+# Define the GUI
+with gr.Blocks() as demo:
 
-        output = gr.State(value=None)
+    output = gr.State(value=None)
 
+    with gr.Row():
+        gr.Markdown("# Text Input")
+    with gr.Row():
+        text = gr.Textbox(label="Text Input")
+
+    with gr.Box():    
         with gr.Row():
-            gr.Markdown("# Text Input")
+            gr.Markdown("### Hyper parameters")
         with gr.Row():
-            text = gr.Textbox(label="Text Input")
-
-        with gr.Box():    
-            with gr.Row():
-                gr.Markdown("### Hyper parameters")
-            with gr.Row():
-                mel_timestep = gr.Slider(label="Number of timesteps (mel)", minimum=0, maximum=1000, step=1, value=50, interactive=True)
-                motion_timestep = gr.Slider(label="Number of timesteps (motion)", minimum=0, maximum=1000, step=1, value=500, interactive=True)
-                length_scale = gr.Slider(label="Length scale (Speaking rate)", minimum=0.01, maximum=3.0, step=0.05, value=1.15, interactive=True)
-                mel_temp = gr.Slider(label="Sampling temperature (mel)", minimum=0.01, maximum=5.0, step=0.05, value=1.3, interactive=True)
-                motion_temp = gr.Slider(label="Sampling temperature (motion)", minimum=0.01, maximum=5.0, step=0.05, value=1.5, interactive=True)
-        
-        synth_btn = gr.Button("Synthesise")
-
-        with gr.Box():    
-            with gr.Row():
-                gr.Markdown("### Phonetised text")
-            with gr.Row():
-                phonetised_text = gr.Textbox(label="Phonetised text", interactive=False)
-        
-        with gr.Box():
-            with gr.Row():    
-                mel_spectrogram = gr.Image(interactive=False, label="mel spectrogram")
-                motion_representation = gr.Image(interactive=False, label="Motion representation")
-            
-            with gr.Row(): 
-                audio = gr.Audio(interactive=False, label="Audio")
-        
-        with gr.Box():
-            with gr.Row():
-                gr.Markdown("### Generate stick figure visualisation")
-            with gr.Row():
-                gr.Markdown("(This will take a while)")
-            with gr.Row(): 
-                visualize = gr.Button("Visualize", interactive=False)
-            
-            with gr.Row():
-                video = gr.Video(label="Video", interactive=False)
-            
-        synth_btn.click(
-            fn=run,
-            inputs=[
-                text,
-                output,
-                mel_timestep,
-                motion_timestep,
-                length_scale,
-                mel_temp,
-                motion_temp
-            ], 
-            outputs=[
-                output,
-                phonetised_text,
-                mel_spectrogram,
-                motion_representation, 
-                audio,
-                # video,
-                visualize 
-            ], api_name="diff_ttsg")
-        
-        visualize.click(
-            fn=visualize_it,
-            inputs=[output],
-            outputs=[video],
-        )
-
-    demo.queue(1)
-    demo.launch()
+            mel_timestep = gr.Slider(label="Number of timesteps (mel)", minimum=0, maximum=1000, step=1, value=50, interactive=True)
+            motion_timestep = gr.Slider(label="Number of timesteps (motion)", minimum=0, maximum=1000, step=1, value=500, interactive=True)
+            length_scale = gr.Slider(label="Length scale (Speaking rate)", minimum=0.01, maximum=3.0, step=0.05, value=1.15, interactive=True)
+            mel_temp = gr.Slider(label="Sampling temperature (mel)", minimum=0.01, maximum=5.0, step=0.05, value=1.3, interactive=True)
+            motion_temp = gr.Slider(label="Sampling temperature (motion)", minimum=0.01, maximum=5.0, step=0.05, value=1.5, interactive=True)
     
-if __name__ == "__main__":
-    main()
+    synth_btn = gr.Button("Synthesise")
+
+    with gr.Box():    
+        with gr.Row():
+            gr.Markdown("### Phonetised text")
+        with gr.Row():
+            phonetised_text = gr.Textbox(label="Phonetised text", interactive=False)
+    
+    with gr.Box():
+        with gr.Row():    
+            mel_spectrogram = gr.Image(interactive=False, label="mel spectrogram")
+            motion_representation = gr.Image(interactive=False, label="Motion representation")
+        
+        with gr.Row(): 
+            audio = gr.Audio(interactive=False, label="Audio")
+    
+    with gr.Box():
+        with gr.Row():
+            gr.Markdown("### Generate stick figure visualisation")
+        with gr.Row():
+            gr.Markdown("(This will take a while)")
+        with gr.Row(): 
+            visualize = gr.Button("Visualize", interactive=False)
+        
+        with gr.Row():
+            video = gr.Video(label="Video", interactive=False)
+        
+    synth_btn.click(
+        fn=run,
+        inputs=[
+            text,
+            output,
+            mel_timestep,
+            motion_timestep,
+            length_scale,
+            mel_temp,
+            motion_temp
+        ], 
+        outputs=[
+            output,
+            phonetised_text,
+            mel_spectrogram,
+            motion_representation, 
+            audio,
+            # video,
+            visualize 
+        ], api_name="diff_ttsg")
+    
+    visualize.click(
+        fn=visualize_it,
+        inputs=[output],
+        outputs=[video],
+    )
+
+demo.queue(1)
+demo.launch()
