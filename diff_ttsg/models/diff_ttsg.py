@@ -355,7 +355,7 @@ class Diff_TTSG(LightningModule):
                     y_motion = one_batch['y_motion'][i].unsqueeze(0).to(self.device)
                     self.logger.experiment.add_image(f'original/mel_{i}', plot_tensor(y.squeeze().cpu()), self.current_epoch, dataformats='HWC')
                     if self.generate_motion:
-                        self.logger.experiment.add_image(f'original/mel_{i}', plot_tensor(y_motion.squeeze().cpu()), self.current_epoch, dataformats='HWC')
+                        self.logger.experiment.add_image(f'original/motion_{i}', plot_tensor(y_motion.squeeze().cpu()), self.current_epoch, dataformats='HWC')
 
             log.debug(f'Synthesising...')
             for i in range(4):
