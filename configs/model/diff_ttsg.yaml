@@ -1,5 +1,5 @@
 _target_: diff_ttsg.models.diff_ttsg.Diff_TTSG
-n_vocab: 149
+n_vocab: 178 
 n_spks: 1
 spk_emb_dim: 64
 n_enc_channels: 192

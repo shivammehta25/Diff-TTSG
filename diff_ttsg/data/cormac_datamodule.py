@@ -141,6 +141,7 @@ class TextMelDataset(torch.utils.data.Dataset):
             self.data_parameters = { 'mel_mean': 0, 'mel_std': 1, 'motion_mean': 0, 'motion_std': 1 }
         random.seed(seed)
         random.shuffle(self.filepaths_and_text)
+        self.cleaners = ["english_cleaners2"]
 
     def get_pair(self, filepath_and_text):
         filepath, text = filepath_and_text[0], filepath_and_text[1]
@@ -165,9 +166,9 @@ class TextMelDataset(torch.utils.data.Dataset):
         return mel
 
     def get_text(self, text, add_blank=True):
-        text_norm = text_to_sequence(text, dictionary=self.cmudict)
+        text_norm = text_to_sequence(text, self.cleaners)
         if self.add_blank:
-            text_norm = intersperse(text_norm, len(symbols))  # add a blank token, whose id number is len(symbols)
+            text_norm = intersperse(text_norm, 0) 
         text_norm = torch.IntTensor(text_norm)
         return text_norm
 
