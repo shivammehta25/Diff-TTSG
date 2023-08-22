@@ -20,7 +20,7 @@ We present Diff-TTSG, the first diffusion model that jointly learns to synthesis
 [arxiv_link]: https://arxiv.org/abs/2306.09417
 [huggingface_space]: https://huggingface.co/spaces/shivammehta25/Diff-TTSG
 
-## Teaser
+## Teaser (Clik the image to be redirected to the YouTube video)
 
 [![Watch the video](https://img.youtube.com/vi/xYxcqyMJjsE/maxresdefault.jpg)](https://www.youtube.com/watch?v=xYxcqyMJjsE)
 
