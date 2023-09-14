@@ -810,7 +810,7 @@ If you use or build on our method or code for your research, please cite our pap
 ```
 @inproceedings{mehta2023diff,
   author={Mehta, Shivam and Wang, Siyang and Alexanderson, Simon and Beskow, Jonas and Sz{\'e}kely, {\'E}va and Henter, Gustav Eje},
-  title={{D}iff-{TTSG}: {D}enoising probabilistic integrated speech and gesture synthesis},
+  title={Diff-TTSG: Denoising probabilistic integrated speech and gesture synthesis},
   year={2023},
   booktitle={Proc. ISCA Speech Synthesis Workshop (SSW)},
   pages={150--156},
