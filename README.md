@@ -69,11 +69,13 @@ or use `synthesis.ipynb`
 If you use or build on our method or code for your research, please cite our paper:
 
 ```
-@article{mehta2023diffttsg,
-      title={Diff-TTSG: Denoising probabilistic integrated speech and gesture synthesis},
-      author={Shivam Mehta and Siyang Wang and Simon Alexanderson and Jonas Beskow and Éva Székely and Gustav Eje Henter},
-      journal={arXiv preprint arXiv:2306.09417},
-      year={2023},
+@inproceedings{mehta2023diff,
+  author={Mehta, Shivam and Wang, Siyang and Alexanderson, Simon and Beskow, Jonas and Sz{\'e}kely, {\'E}va and Henter, Gustav Eje},
+  title={{D}iff-{TTSG}: {D}enoising probabilistic integrated speech and gesture synthesis},
+  year={2023},
+  booktitle={Proc. ISCA Speech Synthesis Workshop (SSW)},
+  pages={150--156},
+  doi={10.21437/SSW.2023-24}
 }
 ```
 
