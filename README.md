@@ -803,4 +803,20 @@ Currently loaded: <span id="mu-diffusion-text" style="font-weight: bold;" > Exam
 </tbody>
 </table>
 
+## Citation information
+
+If you use or build on our method or code for your research, please cite our paper:
+
+```
+@inproceedings{mehta2023diff,
+  author={Mehta, Shivam and Wang, Siyang and Alexanderson, Simon and Beskow, Jonas and Sz{\'e}kely, {\'E}va and Henter, Gustav Eje},
+  title={{D}iff-{TTSG}: {D}enoising probabilistic integrated speech and gesture synthesis},
+  year={2023},
+  booktitle={Proc. ISCA Speech Synthesis Workshop (SSW)},
+  pages={150--156},
+  doi={10.21437/SSW.2023-24}
+}
+```
+
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fshivammehta25.github.io%2FDiff-TTSG&count_bg=%23409CFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)][this_page]
